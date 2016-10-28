@@ -62,6 +62,6 @@ print "Here it goes... nggghhh\n";
 var_dump($alltheuserlinks); // And now taking a dump in your face
 
 //print "scraperwiki::save says: ";
-scraperwiki::save(0,var_dump($allthelinks));
+scraperwiki::save_sqlit(0,var_dump($allthelinks));
 
 ?>
