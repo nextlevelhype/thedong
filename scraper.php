@@ -23,7 +23,7 @@ print "Wait... \$howmanypages did you want me to scrape? Oh right, " . $howmanyp
 print "For-loop incoming...\n";
 for ($page = 1; $page <= $howmanypages; $page++) {
     print "Scraping dat \$page " . $page . "...\n";
-    $dathtml = scraperWiki::scrape("http://" . $thevictim . ".tumblr.com/page/" . $page);
+    $dathtml = scraperwiki::scrape("http://" . $thevictim . ".tumblr.com/page/" . $page);
     $dom = new simple_html_dom();
     $dom -> load($dathtml);
     print "Foreach-loop incoming...\n";
